@@ -100,7 +100,7 @@ set(APP_NAME "curve-editor")
 
 
 # Copy all the shaders and tell the build system to re-run CMAKE if one of them changes
-file(GLOB files 453-skeleton/shaders/*)
+file(GLOB files curve-editor/shaders/*)
 foreach(file ${files})
 	get_filename_component(name ${file} NAME)
 	configure_file(${file} shaders/${name})
